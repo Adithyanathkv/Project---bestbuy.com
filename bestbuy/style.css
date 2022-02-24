@@ -1,463 +1,151 @@
-body{
-    margin:0px;
-    padding:0px;
-    min-height: 100vh;
-    width:100vw;
-    overflow-x:hidden ;
+#container{
+        
+    justify-content: center;
+    /* margin: auto; */
+    
+    
+    
 }
- ::-webkit-scrollbar-button{
-     display: none;
- }
-#bodyname{
-
-    background-color:rgb(0,71,190);
-    width:2100px;
-    height:170px;
-    margin:0px;
-    padding:0px;
-}
-#tops{
-    color: white;
-    font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;
-     margin-left:40px;
-     font-size: 50px;
-     background-color:rgb(187,6,40) ;
-  width: 110px;
-  padding: 8px;
-  font-weight: bold;
-  margin-bottom: 40px;
-
-}
-#day{
-    margin-left: 180px;
-    margin-top: -105px;
-    color:white;
-    font-size:50px ;
-}
-.secondclass{
-    color: white;
-    font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;
-    margin-left:40px;
-    font-size: 20px;
-   
-
-}
-#one{
-    display:flex;
-    height:600px;
-    width:2000px;
-}
-.two{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 300px);
-  
-    width:1000px;
-   }
-   .four{
-       margin-left: 250px;
-       margin-top: 200px;
-   }
-
-.three{
-    display: grid;
-    /* grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 200px); */
-  
-    width:1200px;
-}
-.five{
-    color: rgb(0,71,190);
-    font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;
-    margin-top: 200px;
-    width: 2000px;
-   }
-   .six{
-       font-size: 19px;
-      margin-top: -120px;
-     
-   }
-   button{
-     height: 40px;
-     width: 120px;
-     font-size: 20px;
-     margin-top: -190px;
-     color: white;
-     background-color: rgb(0,71,190);
-   }
-button:hover{
-    background-color:blue;
-}
-.line{
-height: 4px;
-width:2000px;
-
-background-color: lightgray;
-}
-
-
-
-/* ************************************product all*************************************** */
-#day1{
-    font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;  
-color: black; 
-margin-left: 20px;
-font-size: 40px;
-
-}
-#objmaindiv{
-    margin-top: 50px;
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4,600px);
+#mainBox{
+    /* border: 1px solid; */
+    display: flex;
+    gap: 30px;
+    width: auto;
+    justify-content: center;
+    margin-top: 1%;
     height:auto;
-    width:2000px;
-    /* border:2px solid black; */
-    /* background-color: blue; */
-}
-#div1{
-    height:600px;
-    width:500px;
     
-    box-shadow:1px 0px 0px 1px lightgray;
+    
+}
+
+
+#column2{
+    
+    width: 320px;
+    margin: 0px 50px;
+}
+
+#miniDiv1{
+    display: flex;
+    
+    gap: 1%;
+
+}
+#ratingStars{
+    height: 45px;
+    width: 90px;
+}
+#sku{
+    margin-bottom: 0%;
+}
+
+#miniDiv2{
+    display: flex;
+}
+#miniDiv3{
+    display: flex;
+    height: 35px;
    
+    text-align: center;
+    align-content: center;
+}
+#subMiniDiv3{
+    
+    width: 80px;
+    color: white;
+    background: rgb(151, 52, 52);
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 4px 0px;
+    margin-right: 5px;
+    
     
 }
-#image{
-    height:230px;
-    margin-left: 10px;
-  
-}
-#name{
-    font-size: 20px;
-    color:rgb(0,71,190);
-    margin-left: 10px;
-    font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;
-}
+
+
+
 #price{
     font-weight: bold;
     margin-bottom: 0%;
     font-size: 32px;
 }
-#starimage{
-   height:20px;
-   margin-left: 20px;
-}
-#addtocart{
-    background-color:rgb(253, 219, 27);
-    height:40px;
-    width:250px;
+
+
+#addTocartButton{
+    
+    background-color: rgb(253, 219, 27);
+    text-align: center;
+    height: 40px;
+    width: 250px;
     border-radius: 10px;
+    margin-top: 15%;
     font-weight: bold;
     font-size: 18px;
-    
-   
-}
-#addtocart:hover{
-box-shadow:inset 300px 0 0 0 #92870c;
-}
-#ratenum{
-    margin-left: 160px;
-    margin-top: -23px;
-    color:rgb(0,71,190);
-}
-#price{
-    margin-left: 20px;
-    margin-top: 10px;
-}
-
-#save{
-   background-color:rgb(187,6,40) ;
-   width:140px;
-   font-size: 25px;
-   margin-left: 20px;
-   color:white;
-
-   font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;
-}
-#was{
-    margin-left:200px;
-    margin-top: -52px;
-    font-size: 20px;
-}
-#strikeofprices{
-    margin-left: 250px;
-    margin-top:-44px;
-    font-size: 20px;
-}
-#addtocart{
-    margin-left: 20px;
-    margin-top: 60px;
-
-}
-/* ************************************************login****************************************************** */
-.line2{
-    height: 4px;
-    width:2000px;
-    margin-top: 50px;
-    background-color: lightgray;
-    }
+    box-shadow: 0px 1px 2px 1px grey;
     
 
-#box{
-    border:1px solid grey;
-    height:500px;
-    width:1300px;
-   margin-left:400px;
-   border-radius: 5px;
-   margin-top: 100px;
-
 }
-
-
-#login{
-    display:grid;
-    gap:30px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 100px 300px;
-    margin-top:20px;
-    margin-left: 50px;
-    margin-right: 50px;
- 
-  
-    grid-template-areas: 
-    " nav nav "
-    "a b"
-    }
-    #login>div:nth-child(1){
-        grid-area: nav;
-     
-    }
-    #login>div:nth-child(2){
-        grid-area: a;
-        border:1px solid grey;
-        border-radius: 5px;
-        background-color: rgb(247,249,251);
-    }
-    #login>div:nth-child(3){
-        grid-area: b;
-        border:1px solid grey;
-        border-radius: 5px;
-        background-color: rgb(247,249,251);
-    }
-    #heading1{  
-     font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;
- }   
-#man{
-
-   font-size: 20px;
- font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;
-}
-.email{
-   margin-left: 50px;
-   margin-top: 50px;
-   font-size: 30px;
-
-   font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;
-}
-.enter{
-  padding:14px 80px;
-   font-size: 20px;
-   margin-left: 50px;
-}
-#button1{
- background-color: rgb(0,70,190);
- font-size: 20px;
- color: white;
- margin-left: 50px;
- margin-top: 30px;
- border-radius: 5px;
-}
-#button1:hover{
-   background-color: navy;
-}
-#button2:hover{
-   background-color: navy;
-}
-#button2{
- background-color: rgb(0,70,190);
- font-size: 20px;
- color: white;
- margin-left: 50px;
- border-radius: 5px;
-
-}
-.mobile{
- margin-left: 50px;
- font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;
-}
-/* ************************************************************************three box************************************************************************* */
-#box3{
-    margin-top: 60px;
-    display:flex;
- 
-    height:120px;
-    width:2000px;
-}
-.boxinner{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1,120px);
+#addTocartButton:hover{
     
-   margin-left: 140px;
-    width:9%;
-}
-.boxinner>img{
-width:72px;
-height:72px;
-margin-top: 10px;
-margin-left: 40px;
-
-}
-.line3{
-height:100px;
-width:0px;
-border:1px solid grey;
-background:grey;
-margin-top: 10px;
-margin-left: 40px;
-}
-/* *********************************************************************blackhistory************************************************************* */
-#bbox{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(1, 300px);
-    border: 3px solid lightgray;
-    width:1400px;
-    height:400px;
-    margin-left: 450px;
-    margin-top: 50px;
+    box-shadow: inset 300px 0 0 0 yellow;
     
 }
-#bbox>div{
-    height:350px;
-    width:600px;
-   
-    margin-top: 20px;
-}
-#bbox>div>img{
-    height: 250px;
-    margin-top: 50px;
-   margin-left: 110px;
-}
 
-#bbox>div>h1{
-    color: rgb(14,107,218);
-    margin-top: 50px;
-}
-#bbox>div>p{
-    font-size: 24px;
-}
-/* ************************************************************************10productbox************************************************************************* */
-#square{
+#dollarSign{
+    font-size: 32px;
     font-weight: bold;
-    background-color: rgb(187,6,40);
+   
+}
+
+#image{
+    margin-top: 8%;
     width: 200px;
-    /* padding: 8px; */
-    color: white;
-    font-size: 40px;
-    font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;
-   
-}
-#square2{
-    font-size: 20px;
-    font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;
-     margin-left: 230px;
-     margin-top: -50px;
-  
-}
-#line4{
-    height: 4px;
-    width: 2000px;
-    background-color: lightgray;
-}
-#topdeal{
-    margin-top: 40px;
-    display:grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(1, 200px);
-    width:2000px;
-}
-
-/* #topdeal>div{
-    border:1px solid black;
-   
-} */
-
-#topdeal>div:hover{
-    border:1px solid rgb(0,71,190);
-       }
-#topdeal>div>img{
-    margin-left: 20px;
-}
-.text{
-     color:rgb(0,71,190);
-    /* margin-left: 10px; */
-    /* margin-top: 15px;
-     text-align-last: auto; */
-   text-align: center;
-   
-}
-.name{
-    margin-top: 60px;  
-    margin-left: 20px;
-    color:rgb(0,71,190);
-    text-align: center;
-}
-.name1{
-    color:rgb(0,71,190);
-    margin-top: 30px;  
-    margin-left: 20px;
-}
-/* ***************************************************************************Daily deals at Best Buy.****************************************************************** */
-#sam{
-    border:3px solid lightgray;
-    height:450px;
-    width:1970px;
-    margin-left: 20px;
-    margin-top: 50px;
-  
+    /* height: 200px; */
+    /* height: 200px; */
 
 }
+#save{
+    margin: auto;
+    
+}
+#get{
+    color: green;
+    margin-top: 0%;
+}
+#name{
+    color: blue;
+    
+    
+}
+#name:hover{
+    
+    
+    /* font-weight: bold; */
+    color: rgb(10, 10, 92);
+    
+}
+#location{
+    color: blue;
+    font-size: 14px;
+    margin-top: 0%;
+}
+#location:hover{
+    
+    
+    /* font-weight: bold; */
+    color: rgb(10, 10, 92);
+    
+}
+#extimates{
+    color: blue;
+    font-size: 14px;
+    margin-top: 0%;
+}
+#extimates:hover{
+    
+    
+    /* font-weight: bold; */
+    color: rgb(10, 10, 92);
+    
+}
 
-#sam1{
-    display:grid;
-    gap:30px;
-   
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 70px 400px;
-    grid-template-areas: 
-    " nav nav "
-    "a b"
-    }
-    #sam1>div:nth-child(1){
-        grid-area: nav;
-        border:3px solid lightgrey;
-        width: 1965px;
-    }
-    #sam1>div:nth-child(2){
-        grid-area: a;
-       
-    }
-    #sam1>div:nth-child(3){
-        grid-area: b;
-      
-    }
-    .inter{
-        font-size: 23px;
-        font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;
-        color:grey;
-     margin-left: 4px; }  
-        
-    .sam4{
-        margin-left: 20px;
-     font-size: 23px; 
-     font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;  
-     color:grey;
- } 
-    .sam2>h1{
-     margin-left: 40px;   
-     font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;}
-    .sam3{
-        margin-left:40px;
-        font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;}

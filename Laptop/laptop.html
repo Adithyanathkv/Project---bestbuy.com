@@ -18,6 +18,8 @@
    #filterDiv{
     border: 1px solid;
     width: 20%;
+    overflow: scroll;
+    
    
     
     
@@ -29,7 +31,7 @@
    }
    #sortDiv{
        
-       height: 1%;
+       height: 75px;
        display: flex;
        justify-content: flex-end;
        align-items: flex-end;
@@ -54,7 +56,16 @@
 </style>
 <body>
         <div id="grandFather">
-            <div id="filterDiv">filter</div>
+            <div id="filterDiv">
+                <!-- filter -->
+                <h3 id="priceHeading">Price</h3><br>
+                <button id="filterbtn0">All Products</button><br>
+                <button id="filterbtn1">$00 - $499.99</button><br>
+                <button id="filterbtn2">$500 - $999.99</button><br>
+                <button id="filterbtn3">$1000 - $1499.99</button><br>
+                <button id="filterbtn4">$1500 - $1999.99</button><br>
+                
+            </div>
             <div id="parent">
                 
                 <div id="sortDiv">

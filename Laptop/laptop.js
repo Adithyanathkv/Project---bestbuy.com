@@ -353,11 +353,11 @@ var laptopData = JSON.parse(localStorage.getItem("laptopPage")) || [];
     
 var laptopCartArr = JSON.parse(localStorage.getItem("laptopCartItem")) || [];
 
-display()
-function display(){
+display(laptopData);
+function display(data){
 document.querySelector("#container").innerHTML = "";
 
-laptopData.map( function(element, index){
+  data.map( function(element, index){
     
 
     var mainDiv = document.createElement("div");
@@ -547,3 +547,86 @@ function addTocart(element){
     display();
   }
   }
+  
+
+//   const result = laptopData.filter(laptopData = > laptopData.price > 500);
+// console.log(result
+
+ 
+  // console.log(x);
+  document.querySelector("#filterbtn0").addEventListener("click", filterbutton0)
+
+
+  function filterbutton0(){
+    // console.log(filterbtn1)
+    var x = laptopData.filter(function(element){
+      return element.price > 0
+      
+    })
+    display(x);
+  
+  }
+
+
+document.querySelector("#filterbtn1").addEventListener("click", filterbutton1)
+
+
+function filterbutton1(){
+  // console.log(filterbtn1)
+  var x = laptopData.filter(function(element){
+    return element.price < 499.99 && element.price > 0
+    
+  })
+  display(x);
+
+}
+
+document.querySelector("#filterbtn2").addEventListener("click", filterbutton2)
+
+
+function filterbutton2(){
+  // console.log(filterbtn2)
+  var x = laptopData.filter(function(element){
+    return element.price < 999.99 && element.price > 500
+    
+  })
+  display(x);
+
+}
+
+document.querySelector("#filterbtn3").addEventListener("click", filterbutton3)
+
+
+function filterbutton3(){
+  // console.log(filterbtn2)
+  var x = laptopData.filter(function(element){
+    return element.price < 1499.99 && element.price > 1000
+    
+  })
+  display(x);
+
+}
+
+document.querySelector("#filterbtn4").addEventListener("click", filterbutton4)
+
+
+function filterbutton4(){
+  // console.log(filterbtn2)
+  var x = laptopData.filter(function(element){
+    return element.price < 1999.99 && element.price > 1500
+    
+  })
+  display(x);
+
+}
+
+// Lenovo - Yoga 7i 2-in-1 15.6 Touch Screen Laptop - Intel Evo Platform Core i7 - 12GB Memory - 512GB Solid State Drive - Dark Moss
+// function filterbutton2(){
+//   console.log(filterbtn2)
+//   var x = laptopData.filter(function(element){
+//     return element.name == "Samsung - Galaxy Book Flex2 Alpha 13.3 QLED Touch-Screen Laptop - Intel Core i7 - 16GB Memory - 512GB SSD - Mystic Black"
+    
+//   })
+//   display(x);
+
+// }
