@@ -1,12 +1,17 @@
 body{
     margin:0px;
     padding:0px;
+    min-height: 100vh;
+    width:100vw;
+    overflow-x:hidden ;
 }
-
+ ::-webkit-scrollbar-button{
+     display: none;
+ }
 #bodyname{
 
     background-color:rgb(0,71,190);
-    width:100%;
+    width:2100px;
     height:170px;
     margin:0px;
     padding:0px;
@@ -40,7 +45,7 @@ body{
 #one{
     display:flex;
     height:600px;
-    width:100%;
+    width:2000px;
 }
 .two{
     display: grid;
@@ -65,7 +70,7 @@ body{
     color: rgb(0,71,190);
     font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;
     margin-top: 200px;
-    width: 100%;
+    width: 2000px;
    }
    .six{
        font-size: 19px;
@@ -85,7 +90,7 @@ button:hover{
 }
 .line{
 height: 4px;
-width:100%;
+width:2000px;
 
 background-color: lightgray;
 }
@@ -106,7 +111,7 @@ font-size: 40px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4,600px);
     height:auto;
-    width:100%;
+    width:2000px;
     /* border:2px solid black; */
     /* background-color: blue; */
 }
@@ -120,13 +125,13 @@ font-size: 40px;
 }
 #image{
     height:230px;
-    margin-left: 50px;
+    margin-left: 10px;
   
 }
 #name{
     font-size: 20px;
     color:rgb(0,71,190);
-    margin-left: 50px;
+    margin-left: 10px;
     font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;
 }
 #price{
@@ -136,7 +141,7 @@ font-size: 40px;
 }
 #starimage{
    height:20px;
-   margin-left: 50px;
+   margin-left: 20px;
 }
 #addtocart{
     background-color:rgb(253, 219, 27);
@@ -157,7 +162,7 @@ box-shadow:inset 300px 0 0 0 #92870c;
     color:rgb(0,71,190);
 }
 #price{
-    margin-left: 55px;
+    margin-left: 20px;
     margin-top: 10px;
 }
 
@@ -165,7 +170,7 @@ box-shadow:inset 300px 0 0 0 #92870c;
    background-color:rgb(187,6,40) ;
    width:140px;
    font-size: 25px;
-   margin-left: 50px;
+   margin-left: 20px;
    color:white;
 
    font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;
@@ -181,14 +186,14 @@ box-shadow:inset 300px 0 0 0 #92870c;
     font-size: 20px;
 }
 #addtocart{
-    margin-left: 50px;
+    margin-left: 20px;
     margin-top: 60px;
 
 }
 /* ************************************************login****************************************************** */
 .line2{
     height: 4px;
-    width:100%;
+    width:2000px;
     margin-top: 50px;
     background-color: lightgray;
     }
@@ -287,7 +292,7 @@ box-shadow:inset 300px 0 0 0 #92870c;
     display:flex;
  
     height:120px;
-    width:100%;
+    width:2000px;
 }
 .boxinner{
     display:grid;
@@ -318,7 +323,7 @@ margin-left: 40px;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(1, 300px);
     border: 3px solid lightgray;
-    width:60%;
+    width:1400px;
     height:400px;
     margin-left: 450px;
     margin-top: 50px;
@@ -348,7 +353,7 @@ margin-left: 40px;
     font-weight: bold;
     background-color: rgb(187,6,40);
     width: 200px;
-    padding: 8px;
+    /* padding: 8px; */
     color: white;
     font-size: 40px;
     font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;
@@ -363,7 +368,7 @@ margin-left: 40px;
 }
 #line4{
     height: 4px;
-    width: 100%;
+    width: 2000px;
     background-color: lightgray;
 }
 #topdeal{
@@ -371,6 +376,7 @@ margin-left: 40px;
     display:grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(1, 200px);
+    width:2000px;
 }
 
 /* #topdeal>div{
@@ -407,7 +413,7 @@ margin-left: 40px;
 #sam{
     border:3px solid lightgray;
     height:450px;
-    width:2250px;
+    width:1970px;
     margin-left: 20px;
     margin-top: 50px;
   
@@ -417,9 +423,9 @@ margin-left: 40px;
 #sam1{
     display:grid;
     gap:30px;
+   
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 70px 400px;
-  
     grid-template-areas: 
     " nav nav "
     "a b"
@@ -427,7 +433,7 @@ margin-left: 40px;
     #sam1>div:nth-child(1){
         grid-area: nav;
         border:3px solid lightgrey;
-        width: 100%;
+        width: 1965px;
     }
     #sam1>div:nth-child(2){
         grid-area: a;
