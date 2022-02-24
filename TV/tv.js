@@ -508,42 +508,64 @@ function addTocart(element){
   }
   
   
-  function sortItems(){
-  var sorting=document.querySelector("#sort").value
-  console.log(sorting)
+  // function sortItems(){
+  // var sorting=document.querySelector("#sort").value
+  // console.log(sorting)
   
-  if(sorting=="h2l"){
-    tvData.sort(function(a,b){
-      return b.price-a.price
-    })
-    display()
-  }
-  else if(sorting=="l2h"){
-    tvData.sort(function(a,b){
-      return a.price-b.price
-    })
-    display()
-  }
-  else if (sorting == "acending") {
-    tvData.sort(function (a, b) {
-      if(a.name>b.name){
-        return 1
-      }
-      if(a.name<b.name){
-        return -1
-      }
-    });
-    display();
-  }
-  else if (sorting == "decending") {
-    tvData.sort(function (a, b) {
-      if(b.name>a.name){
-        return 1
-      }
-      if(b.name<a.name){
-        return -1
-      }
-    });
-    display();
-  }
-  }
+  // if(sorting=="h2l"){
+  //   tvData.sort(function(a,b){
+  //     return b.price-a.price
+  //   })
+  //   display()
+  // }
+  // else if(sorting=="l2h"){
+  //   tvData.sort(function(a,b){
+  //     return a.price-b.price
+  //   })
+  //   display()
+  // }
+  // else if (sorting == "acending") {
+  //   tvData.sort(function (a, b) {
+  //     if(a.name>b.name){
+  //       return 1
+  //     }
+  //     if(a.name<b.name){
+  //       return -1
+  //     }
+  //   });
+  //   display();
+  // }
+  // else if (sorting == "decending") {
+  //   tvData.sort(function (a, b) {
+  //     if(b.name>a.name){
+  //       return 1
+  //     }
+  //     if(b.name<a.name){
+  //       return -1
+  //     }
+  //   });
+  //   display();
+  // }
+  // }
+// // filter function
+//   function search(){
+//     var searchText = document.getElementById("search").value;
+//     console.log(searchText);
+
+//     var filterData = tvData.filter(function(item) {
+//       return item.name.includes(searchText);
+//     });
+//     console.log(filterData);
+//     display(filterData);
+//     document.getElementById("items").textContent = filterData.length;
+//   }
+
+//   function filterItems(){
+//     var filter = document.getElementById("filter").value;
+//     var filterData = tvData.filter(function(item){
+//         return item.price > Number(filter);      
+//       })
+//       console.log(filterData);
+//       display(filterData);
+//       document.getElementById("items").textContent = filterData.length;
+//   }

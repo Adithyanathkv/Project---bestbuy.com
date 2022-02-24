@@ -1,5 +1,4 @@
-// localStorage.setItem("dodArr",JSON.stringify(objdealoftheday))
-var objdealoftheday=JSON.parse(localStorage.getItem("dodArr")) || [];
+
 
 var objdealoftheday=[ 
     {
@@ -170,14 +169,6 @@ var objdealoftheday=[
     
     ]
 
-    localStorage.setItem("dodArr",JSON.stringify(objdealoftheday))
-
-    var objdealoftheday=JSON.parse(localStorage.getItem("dodArr")) || [];
-
-
-
-    // localStorage.setItem("dodcartdata", JSON.stringify(dodcartArr));
-  var dodcartArr=JSON.parse(localStorage.getItem("dodcartdata")) || [];
 
 
     display()
@@ -260,9 +251,8 @@ var objdealoftheday=[
     var addtocart=document.createElement("button");
     addtocart.innerText="🛒Add to Cart"
     addtocart.setAttribute("id", ("addtocart"))
-    addTocart.addEventListener("click",function(){
-    funaddTocart(element)
-    })
+   
+  
     
     
     div1.append(image,name,div4rate,price,divbtn,addtocart)
@@ -270,10 +260,3 @@ var objdealoftheday=[
     
     })
 }
-function funaddTocart(element){
-
-    element.quant = 1;
-    dodcartArr.push(element);
-    localStorage.setItem("dodcartdata", JSON.stringify(dodcartArr));
-    }
-  
