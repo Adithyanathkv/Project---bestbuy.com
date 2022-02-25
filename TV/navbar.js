@@ -22,5 +22,5 @@ function goto(){
 }
 
 document.querySelector("#companylogo").addEventListener("click",function(){
-    window.location.href="../homepage/homepage.html"
+    window.location.href="../homepage/homepagecomplete.html"
 })
