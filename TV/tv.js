@@ -516,7 +516,7 @@ function addTocart(element){
     tvData.sort(function(a,b){
       return b.price-a.price
     })
-  console.log(sorting)
+  // console.log(sorting)
     display(tvData)
   }
   else if(sorting=="l2h"){

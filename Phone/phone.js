@@ -352,7 +352,7 @@ localStorage.setItem("phonePage", JSON.stringify(phoneData));
 var phoneData = JSON.parse(localStorage.getItem("phonePage")) || [];
 
     
-var phonephoneCartArr = JSON.parse(localStorage.getItem("phoneCartItem")) || [];
+var phoneCartArr = JSON.parse(localStorage.getItem("phoneCartItem")) || [];
 
 display(phoneData)
 function display(data){
@@ -503,13 +503,6 @@ data.map( function(element, index){
 // button function
 function addTocart(element){
 
-element.quant = 1;
-phoneCartArr.push(element);
-localStorage.setItem("phoneCartItem", JSON.stringify(phoneCartArr));
-}
-
-function addTocart(element){
-
   element.quant = 1;
   phoneCartArr.push(element);
   localStorage.setItem("cartItem", JSON.stringify(phoneCartArr));
@@ -524,6 +517,7 @@ function addTocart(element){
     phoneData.sort(function(a,b){
       return b.price-a.price
     })
+  // console.log(sorting)
     display(phoneData)
   }
   else if(sorting=="l2h"){
@@ -544,7 +538,7 @@ function addTocart(element){
     display(phoneData);
   }
   else if (sorting == "decending") {
-    phoneData.sort(function (a, b) {
+    phoneData.sort(function (a,b) {
       if(b.name>a.name){
         return 1
       }
@@ -554,8 +548,8 @@ function addTocart(element){
     });
     display(phoneData);
   }
-  }
-    // search filter
+}
+  // searchfilter
   function Search(){
     var searchText=document.getElementById("search").value;
     console.log(searchText);
