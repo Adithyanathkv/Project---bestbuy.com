@@ -1,4 +1,11 @@
 
+
+document.querySelector("#searchlogo").addEventListener("click",function(){
+    console.log("hello")
+
+    goto()
+})
+
 function goto(){
     var searchtextvalue=document.querySelector("#search").value
     console.log(searchtextvalue)
@@ -11,7 +18,5 @@ function goto(){
     }
     if(searchtextvalue=="phone"){
         window.location.href="../phone/phone.html"
-    }
-    
-    
+    } 
 }
