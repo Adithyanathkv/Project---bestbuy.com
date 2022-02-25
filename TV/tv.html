@@ -16,8 +16,12 @@
 
    }
    #filterDiv{
-    border: 1px solid;
+    /* border: 1px solid; */
     width: 20%;
+    align-items: center;
+    /* background-color: #0046BE; */
+    box-shadow: 0px 2px 4px 2px grey;
+    
    }
    #parent{
     border: 1px solid;
@@ -26,7 +30,7 @@
    }
    #sortDiv{
        
-       height: 1%;
+        height: 75px;
        display: flex;
        justify-content: flex-end;
        align-items: flex-end;
@@ -48,15 +52,31 @@
        font-size: 20px;
        
    }
+   #innerFilterDiv{
+       /* border: 1px solid; */
+       align-items: center;
+       background-color: white;
+       margin-top: 20%;
+       overflow: scroll;
+       padding-bottom: 5%;
+   }
 </style>
 <body>
         <div id="grandFather">
             <div id="filterDiv">
                 <!-- write filter code here -->
-                <input id="search" onkeyup="Search()" />
-                <!-- <h1 id="items">0</h1> -->
-                
-
+                <input placeholder="Find Product" id="search" onkeyup="Search()" />
+                       <!-- filter -->
+                       <div id="innerFilterDiv">
+                       <h3 id="priceHeading">Price</h3><br>
+                <button id="filterbtn0">All Products</button><br>
+                <button id="filterbtn1">$00 - $499.99</button><br>
+                <button id="filterbtn2">$500 - $999.99</button><br>
+                <button id="filterbtn3">$1000 - $1499.99</button><br>
+                <button id="filterbtn4">$1500 Above</button><br>
+            
+                    <!-- filter -->
+                </div>
             </div>
             <div id="parent">
                 

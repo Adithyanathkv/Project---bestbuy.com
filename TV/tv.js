@@ -351,7 +351,7 @@ localStorage.setItem("tvPage", JSON.stringify(tvData));
 var tvData = JSON.parse(localStorage.getItem("tvPage")) || [];
 
     
-var cartArr = JSON.parse(localStorage.getItem("cartItem")) || [];
+var tvCartArr = JSON.parse(localStorage.getItem("cartItem")) || [];
 
 display(tvData)
 function display(data){
@@ -465,13 +465,13 @@ document.querySelector("#container").innerHTML = "";
     save.innerText = element.save;
     subMiniDiv3.append(save)
 
-    subMiniDiv4 = document.createElement("div");
+    var subMiniDiv4 = document.createElement("div");
     subMiniDiv4.setAttribute("id", ("subMiniDiv4"))
     var was = document.createElement("p");
     was.innerText = "Was $";
     subMiniDiv4.append(was)
 
-    subMiniDiv5 = document.createElement("div");
+    var subMiniDiv5 = document.createElement("div");
     subMiniDiv5.setAttribute("id", ("subMiniDiv5"))
 
     var strikedoffprice = document.createElement("p");
@@ -503,14 +503,14 @@ document.querySelector("#container").innerHTML = "";
 function addTocart(element){
 
   element.quant = 1;
-  cartArr.push(element);
-  localStorage.setItem("cartItem", JSON.stringify(cartArr));
+  tvCartArr.push(element);
+  localStorage.setItem("cartItem", JSON.stringify(tvCartArr));
   }
   
   
   function sortItems(){
   var sorting=document.querySelector("#sort").value
-  console.log(sorting)
+  // console.log(sorting)
   
   if(sorting=="h2l"){
     tvData.sort(function(a,b){
@@ -558,4 +558,70 @@ function addTocart(element){
     console.log(filterdata);
     display(filterdata);
     // document.getElementById("items").innerText=filterdata.length;
+}
+
+document.querySelector("#filterbtn0").addEventListener("click", filterbutton0)
+
+
+function filterbutton0(){
+  // console.log(filterbtn1)
+  var x = tvData.filter(function(element){
+    return element.price > 0
+    
+  })
+  display(x);
+
+}
+
+
+document.querySelector("#filterbtn1").addEventListener("click", filterbutton1)
+
+
+function filterbutton1(){
+// console.log(filterbtn1)
+var x = tvData.filter(function(element){
+  return element.price < 499.99 && element.price > 0
+  
+})
+display(x);
+
+}
+
+document.querySelector("#filterbtn2").addEventListener("click", filterbutton2)
+
+
+function filterbutton2(){
+// console.log(filterbtn2)
+var x = tvData.filter(function(element){
+  return element.price < 999.99 && element.price > 500
+  
+})
+display(x);
+
+}
+
+document.querySelector("#filterbtn3").addEventListener("click", filterbutton3)
+
+
+function filterbutton3(){
+// console.log(filterbtn2)
+var x = tvData.filter(function(element){
+  return element.price < 1499.99 && element.price > 1000
+  
+})
+display(x);
+
+}
+
+document.querySelector("#filterbtn4").addEventListener("click", filterbutton4)
+
+
+function filterbutton4(){
+// console.log(filterbtn2)
+var x = tvData.filter(function(element){
+  return  element.price > 1500
+  
+})
+display(x);
+
 }

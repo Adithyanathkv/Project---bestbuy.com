@@ -353,7 +353,7 @@ var laptopData = JSON.parse(localStorage.getItem("laptopPage")) || [];
     
 var laptopCartArr = JSON.parse(localStorage.getItem("laptopCartItem")) || [];
 
-display(laptopData);
+display(laptopData)
 function display(data){
 document.querySelector("#container").innerHTML = "";
 
@@ -402,7 +402,7 @@ document.querySelector("#container").innerHTML = "";
     subMiniDiv1.append(ratingStars)
 
     // sUBminiDiv2
-    subMiniDiv2 = document.createElement("div");
+    var subMiniDiv2 = document.createElement("div");
     subMiniDiv2.setAttribute("id", ("subMiniDiv2"))
 
     var ratingCount = document.createElement("p");
@@ -465,13 +465,13 @@ document.querySelector("#container").innerHTML = "";
     save.innerText = element.save;
     subMiniDiv3.append(save)
 
-    subMiniDiv4 = document.createElement("div");
+    var subMiniDiv4 = document.createElement("div");
     subMiniDiv4.setAttribute("id", ("subMiniDiv4"))
     var was = document.createElement("p");
     was.innerText = "Was $";
     subMiniDiv4.append(was)
 
-    subMiniDiv5 = document.createElement("div");
+    var subMiniDiv5 = document.createElement("div");
     subMiniDiv5.setAttribute("id", ("subMiniDiv5"))
 
     var strikedoffprice = document.createElement("p");
@@ -516,13 +516,13 @@ function addTocart(element){
     laptopData.sort(function(a,b){
       return b.price-a.price
     })
-    display()
+    display(laptopData)
   }
   else if(sorting=="l2h"){
     laptopData.sort(function(a,b){
       return a.price-b.price
     })
-    display()
+    display(laptopData)
   }
   else if (sorting == "acending") {
     laptopData.sort(function (a, b) {
@@ -533,7 +533,7 @@ function addTocart(element){
         return -1
       }
     });
-    display();
+    display(laptopData);
   }
   else if (sorting == "decending") {
     laptopData.sort(function (a, b) {
@@ -544,7 +544,7 @@ function addTocart(element){
         return -1
       }
     });
-    display();
+    display(laptopData);
   }
   }
   
@@ -620,13 +620,13 @@ function filterbutton4(){
 
 }
 
-// Lenovo - Yoga 7i 2-in-1 15.6 Touch Screen Laptop - Intel Evo Platform Core i7 - 12GB Memory - 512GB Solid State Drive - Dark Moss
-// function filterbutton2(){
-//   console.log(filterbtn2)
-//   var x = laptopData.filter(function(element){
-//     return element.name == "Samsung - Galaxy Book Flex2 Alpha 13.3 QLED Touch-Screen Laptop - Intel Core i7 - 16GB Memory - 512GB SSD - Mystic Black"
-    
-//   })
-//   display(x);
-
-// }
+function Search(){
+  var searchText=document.getElementById("search").value;
+  console.log(searchText);
+  var filterdata=laptopData.filter(function(el,index){
+      return el.name.includes(searchText)
+  });
+  console.log(filterdata);
+  display(filterdata);
+  // document.getElementById("items").innerText=filterdata.length;
+}

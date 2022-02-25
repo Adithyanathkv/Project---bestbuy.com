@@ -1,5 +1,5 @@
 var phoneData = JSON.parse(localStorage.getItem("phonePage")) || [];
-// console.log(tvData)
+// console.log(phoneData)
 
 var phoneData =[
     {image_url:
@@ -352,13 +352,13 @@ localStorage.setItem("phonePage", JSON.stringify(phoneData));
 var phoneData = JSON.parse(localStorage.getItem("phonePage")) || [];
 
     
-var phoneCartArr = JSON.parse(localStorage.getItem("phoneCartItem")) || [];
+var phonephoneCartArr = JSON.parse(localStorage.getItem("phoneCartItem")) || [];
 
-display()
-function display(){
+display(phoneData)
+function display(data){
 document.querySelector("#container").innerHTML = "";
 
-phoneData.map( function(element, index){
+data.map( function(element, index){
     
 
     var mainDiv = document.createElement("div");
@@ -511,26 +511,26 @@ localStorage.setItem("phoneCartItem", JSON.stringify(phoneCartArr));
 function addTocart(element){
 
   element.quant = 1;
-  cartArr.push(element);
-  localStorage.setItem("cartItem", JSON.stringify(cartArr));
+  phoneCartArr.push(element);
+  localStorage.setItem("cartItem", JSON.stringify(phoneCartArr));
   }
   
   
   function sortItems(){
   var sorting=document.querySelector("#sort").value
-  console.log(sorting)
+  // console.log(sorting)
   
   if(sorting=="h2l"){
     phoneData.sort(function(a,b){
       return b.price-a.price
     })
-    display()
+    display(phoneData)
   }
   else if(sorting=="l2h"){
     phoneData.sort(function(a,b){
       return a.price-b.price
     })
-    display()
+    display(phoneData)
   }
   else if (sorting == "acending") {
     phoneData.sort(function (a, b) {
@@ -541,7 +541,7 @@ function addTocart(element){
         return -1
       }
     });
-    display();
+    display(phoneData);
   }
   else if (sorting == "decending") {
     phoneData.sort(function (a, b) {
@@ -552,6 +552,83 @@ function addTocart(element){
         return -1
       }
     });
-    display();
+    display(phoneData);
   }
   }
+    // search filter
+  function Search(){
+    var searchText=document.getElementById("search").value;
+    console.log(searchText);
+    var filterdata=phoneData.filter(function(el,index){
+        return el.name.includes(searchText)
+    });
+    console.log(filterdata);
+    display(filterdata);
+    // document.getElementById("items").innerText=filterdata.length;
+}
+
+document.querySelector("#filterbtn0").addEventListener("click", filterbutton0)
+
+
+function filterbutton0(){
+  // console.log(filterbtn1)
+  var x = phoneData.filter(function(element){
+    return element.price > 0
+    
+  })
+  display(x);
+
+}
+
+
+document.querySelector("#filterbtn1").addEventListener("click", filterbutton1)
+
+
+function filterbutton1(){
+// console.log(filterbtn1)
+var x = phoneData.filter(function(element){
+  return element.price < 499.99 && element.price > 0
+  
+})
+display(x);
+
+}
+
+document.querySelector("#filterbtn2").addEventListener("click", filterbutton2)
+
+
+function filterbutton2(){
+// console.log(filterbtn2)
+var x = phoneData.filter(function(element){
+  return element.price < 999.99 && element.price > 500
+  
+})
+display(x);
+
+}
+
+document.querySelector("#filterbtn3").addEventListener("click", filterbutton3)
+
+
+function filterbutton3(){
+// console.log(filterbtn2)
+var x = phoneData.filter(function(element){
+  return element.price < 1499.99 && element.price > 1000
+  
+})
+display(x);
+
+}
+
+document.querySelector("#filterbtn4").addEventListener("click", filterbutton4)
+
+
+function filterbutton4(){
+// console.log(filterbtn2)
+var x = phoneData.filter(function(element){
+  return  element.price > 1500
+  
+})
+display(x);
+
+}
