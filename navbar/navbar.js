@@ -4,7 +4,14 @@ function goto(){
     console.log(searchtextvalue)
     console.log("hello")
     if(searchtextvalue=="tv"){
-        window.location.href="signup.html"
+        window.location.href="../tv/tv.html"
     }
+    if(searchtextvalue=="laptop"){
+        window.location.href="../laptop/laptop.html"
+    }
+    if(searchtextvalue=="phone"){
+        window.location.href="../phone/phone.html"
+    }
+    
     
 }
