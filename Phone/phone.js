@@ -1,4 +1,4 @@
-var phoneData = JSON.parse(localStorage.getItem("phonePage")) || [];
+
 // console.log(phoneData)
 
 var phoneData =[
@@ -352,7 +352,7 @@ localStorage.setItem("phonePage", JSON.stringify(phoneData));
 var phoneData = JSON.parse(localStorage.getItem("phonePage")) || [];
 
     
-var phoneCartArr = JSON.parse(localStorage.getItem("phoneCartItem")) || [];
+var phoneCartArr = JSON.parse(localStorage.getItem("cartItem")) || [];
 
 display(phoneData)
 function display(data){

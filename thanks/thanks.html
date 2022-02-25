@@ -108,7 +108,7 @@
         <img id="bestbuylogoimage"
             src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/BestBuy_Logo_2020-190616.png" alt="error">
 
-        <div><a href="cart.html">Return to Cart</a></div>
+        <div><a id="delete" href="../cart/cart.html">Return to Cart</a></div>
     </div>
 
     <div>
@@ -134,8 +134,13 @@
 </body>
 <script>
     function tocartfromthanks(){
-        window.location.href="home.html"
+        window.location.href="../homepage/homepagecomplete.html"
     }
+
+
+  document.querySelector("#delete").addEventListener("click",function(){
+      localStorage.removeItem("cartItem")
+  })
 
 </script>
 </html>

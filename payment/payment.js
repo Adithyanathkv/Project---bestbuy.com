@@ -64,5 +64,5 @@ function changemethod() {
 }
 
 function tothankspage() {
-  window.location.href = "thanks.html";
+  window.location.href = "../thanks/thanks.html";
 }

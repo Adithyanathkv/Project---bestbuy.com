@@ -17,7 +17,7 @@ function goto(){
         window.location.href="../laptop/laptopcomplete.html"
     }
     if(searchtextvalue=="phone"){
-        window.location.href="../phone/phonecomplete.html"
+        window.location.href="../phone/phone.html"
     } 
 }
 

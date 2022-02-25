@@ -1,47 +1,47 @@
-cartArray = [
-  {
-    image_url:
-      "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452966_sd.jpg;maxHeight=200;maxWidth=300",
-    name: "Samsung - 43 Class 8000 Series LED 4K UHD Smart Tizen TV",
-    model: "Model: UN43AU8000FXZA",
-    sku: "SKU: 6452966",
-    rating_url: "https://confirmedbest.com/ViewAssets/Images/4.5stars.svg",
-    ratingCount: "(823)",
-    get: "Get it today",
-    pickup: "pickup:Available today at Aiea",
-    location: "See all pickup locations",
-    shipping:
-      "Shipping: Unavailable in your area This item is only available in certain markets",
-    extimates: "Estimates for 96939",
-    price: 379.99,
-    save: "Save $70",
-    strikedoffprice: 449.99,
-    quant: 1,
-  },
-  {
-    image_url:
-      "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401740_sd.jpg;maxHeight=200;maxWidth=300",
-    name: "Samsung - 43 Class 7 Series LED 4K UHD Smart Tizen TV",
-    model: "Model: UN43TU7000FXZA",
-    sku: "SKU: 6401740",
-    rating_url: "https://confirmedbest.com/ViewAssets/Images/4.5stars.svg",
-    ratingCount: "(7,002)",
-    get: "Get it today",
-    pickup: "Pickup: Available today at Aiea",
-    location: "See all pickup locations",
-    shipping:
-      "Shipping: Unavailable in your area This item is only available in certain markets",
-    extimates: "Estimates for 96939",
-    price: 309.99,
-    save: "Save $90",
-    strikedoffprice: 399.99,
-    quant: 1,
-  },
+// cartArray = [
+//   {
+//     image_url:
+//       "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452966_sd.jpg;maxHeight=200;maxWidth=300",
+//     name: "Samsung - 43 Class 8000 Series LED 4K UHD Smart Tizen TV",
+//     model: "Model: UN43AU8000FXZA",
+//     sku: "SKU: 6452966",
+//     rating_url: "https://confirmedbest.com/ViewAssets/Images/4.5stars.svg",
+//     ratingCount: "(823)",
+//     get: "Get it today",
+//     pickup: "pickup:Available today at Aiea",
+//     location: "See all pickup locations",
+//     shipping:
+//       "Shipping: Unavailable in your area This item is only available in certain markets",
+//     extimates: "Estimates for 96939",
+//     price: 379.99,
+//     save: "Save $70",
+//     strikedoffprice: 449.99,
+//     quant: 1,
+//   },
+//   {
+//     image_url:
+//       "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401740_sd.jpg;maxHeight=200;maxWidth=300",
+//     name: "Samsung - 43 Class 7 Series LED 4K UHD Smart Tizen TV",
+//     model: "Model: UN43TU7000FXZA",
+//     sku: "SKU: 6401740",
+//     rating_url: "https://confirmedbest.com/ViewAssets/Images/4.5stars.svg",
+//     ratingCount: "(7,002)",
+//     get: "Get it today",
+//     pickup: "Pickup: Available today at Aiea",
+//     location: "See all pickup locations",
+//     shipping:
+//       "Shipping: Unavailable in your area This item is only available in certain markets",
+//     extimates: "Estimates for 96939",
+//     price: 309.99,
+//     save: "Save $90",
+//     strikedoffprice: 399.99,
+//     quant: 1,
+//   },
  
-];
-localStorage.setItem("cartitems", JSON.stringify(cartArray));
+// ];
+// localStorage.setItem("cartitems", JSON.stringify(cartArray));
 
-Cartitems = JSON.parse(localStorage.getItem("cartitems"));
+Cartitems = JSON.parse(localStorage.getItem("cartItem"))||[];
 console.log(Cartitems);
 
 function displaydata(Cartitems) {
@@ -256,7 +256,7 @@ document
   localStorage.setItem("paymentitems",JSON.stringify(Cartitems))
   //  showtotal();
   localStorage.removeItem("cartitems")
-    window.location.href = "payment.html";
+    window.location.href = "../payment/payment.html";
   });
 
 // function showtotal
@@ -302,3 +302,28 @@ function openForm() {
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
+
+document.querySelector("#searchlogo").addEventListener("click",function(){
+  console.log("hello")
+
+  goto()
+})
+
+function goto(){
+  var searchtextvalue=document.querySelector("#search").value
+  console.log(searchtextvalue)
+  console.log("hello")
+  if(searchtextvalue=="tv"){
+      window.location.href="../tv/tvcomplete.html"
+  }
+  if(searchtextvalue=="laptop"){
+      window.location.href="../laptop/laptopcomplete.html"
+  }
+  if(searchtextvalue=="phone"){
+      window.location.href="../phone/phonecomplete.html"
+  } 
+}
+
+document.querySelector("#companylogo").addEventListener("click",function(){
+  window.location.href="../homepage/homepagecomplete.html"
+})

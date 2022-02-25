@@ -1,8 +1,7 @@
-var tvData = JSON.parse(localStorage.getItem("tvPage")) || [];
 // console.log(tvData)
 
 var tvData =[
-    {image_url:
+  {image_url:
     "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452966_sd.jpg;maxHeight=200;maxWidth=300",
   name: "Samsung - 43 Class 8000 Series LED 4K UHD Smart Tizen TV",
   model : "Model: UN43AU8000FXZA",
@@ -347,17 +346,17 @@ var tvData =[
 
 localStorage.setItem("tvPage", JSON.stringify(tvData));
 
-
 var tvData = JSON.parse(localStorage.getItem("tvPage")) || [];
+
 
     
 var tvCartArr = JSON.parse(localStorage.getItem("cartItem")) || [];
 
 display(tvData)
-function display(data){
+function display(tvdata){
 document.querySelector("#container").innerHTML = "";
 
-    data.map( function(element, index){
+    tvdata.map( function(element, index){
     
 
     var mainDiv = document.createElement("div");
@@ -433,7 +432,7 @@ document.querySelector("#container").innerHTML = "";
     extimates.setAttribute("id", ("extimates"))
 
 
-    div2.append(name,model,sku,miniDiv1,get,pickup,location,shipping,extimates)
+    div2.append(name,model,sku,miniDiv1,get,pickup,shipping,extimates)
 
     // 3rd column
     var div3 = document.createElement("div");
@@ -487,16 +486,13 @@ document.querySelector("#container").innerHTML = "";
     addTocartButton.addEventListener("click",function(){
     addTocart(element)
 })
+
     var line = document.createElement("hr");
     div3.append(miniDiv2,miniDiv3,addTocartButton)
 
 
-
-
     mainDiv.append(div1,div2,div3,)
-    document.querySelector("#container").append(mainDiv,line);
-
-    
+    document.querySelector("#container").append(mainDiv,line);  
 })
 };
 

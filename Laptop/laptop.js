@@ -1,4 +1,4 @@
-var laptopData = JSON.parse(localStorage.getItem("laptopPage")) || [];
+
 // console.log(laptopData)
 
 var laptopData =[
@@ -351,7 +351,7 @@ localStorage.setItem("laptopPage", JSON.stringify(laptopData));
 var laptopData = JSON.parse(localStorage.getItem("laptopPage")) || [];
 
     
-var laptopCartArr = JSON.parse(localStorage.getItem("laptopCartItem")) || [];
+var laptopCartArr = JSON.parse(localStorage.getItem("cartItem")) || [];
 
 display(laptopData)
 function display(data){
@@ -504,7 +504,7 @@ function addTocart(element){
 
   element.quant = 1;
   laptopCartArr.push(element);
-  localStorage.setItem("laptopCartItem", JSON.stringify(laptopCartArr));
+  localStorage.setItem("cartItem", JSON.stringify(laptopCartArr));
   }
   
   

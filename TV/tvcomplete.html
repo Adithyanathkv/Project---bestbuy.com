@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="cart.css" .css">
+    <link rel="stylesheet" href="tv.css" />
     <title>Cart - Best Buy</title>
 </head>
 
@@ -26,7 +26,7 @@
                 <div id="searchbar">
                     <input type="text" id="search" placeholder="Search Best Buy" onclick="goto()">
                     <img id="searchlogo"
-                        src="https://cdn-user-icons.flaticon.com/65075/65075732/1645516872504.svg?token=exp=1645523591~hmac=118d062122ed8130d5f3c71ced6ea1aa"
+                        src="https://t3.ftcdn.net/jpg/03/25/73/68/240_F_325736897_lyouuiCkWI59SZAPGPLZ5OWQjw2Gw4qY.jpg"
                         alt="error">
 
                 </div>
@@ -43,7 +43,7 @@
                     <img id="cartlogo"
                         src="https://cdn-icons.flaticon.com/png/512/2838/premium/2838895.png?token=exp=1645534023~hmac=eec01598345701d83ce219b3b08c603b"
                         alt="error">
-                    <a href="cart.html" id="carttext"> Cart</a>
+                        <a href="../cart/cart.html" id="carttext"> Cart</a>
                 </div>
 
             </div>
@@ -54,8 +54,8 @@
         <div class="bottomnav">
             <div class="deals">
                 <a href="">Top deals</a>
-                <a href="">Deals of the Day</a>
-                <a href="">Best Buy Totaltech</a>
+                <a href="../deal of the day/style.html">Deals of the Day</a>
+                <a href="../total tech/totalTech.html">Best Buy Totaltech</a>
                 <a href="">Credit Cards</a>
                 <a href="">Gift Cards</a>
                 <a href="">Gift Ideas</a>
@@ -72,8 +72,8 @@
                     <li>Account
                         <div class="sublink">
                             <ul>
-                                <li><a href="signup.html"> Sign In</a></li>
-                                <li><a href="">Create an Account</a></li>
+                                <li><a href="../SIgnIN_SignUp/login.html"> Sign In</a></li>
+                                <li><a href="../SIgnIN_SignUp/signUp.html">Create an Account</a></li>
                                 <li>
                                     <p> Your Orders</p>
                                 </li>
@@ -94,114 +94,45 @@
 
     <!-- !enter your content here -->
 
-
-
-
-    <div class="contentcontainer">
-        <div id="ordereditems">
-            <h1>Your Cart</h1>
-
-            <div id="paidmembership">
-               <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/pac_lady_2-152445.jpg" alt="error">
-               <div id="paidmembershipbanner">
-                   <h2>
-                       <span>Join Best Buy Totaltech™ and see the benefits today.</span>
-                   </h2>
-                   <p>
-                       <span>
-                        24/7 tech support. Product protection. Free standard installation. And more.
-                       </span>
-                   </p>
-               </div>
-               <div id="paidmembershipbutton">
-                   <button> Learn About Totaltech</button>
-               </div>
+    <div id="grandFather">
+        <div id="filterDiv">
+            <!-- write filter code here -->
+            <input placeholder="Find Product" id="search" onkeyup="Search()" />
+                   <!-- filter -->
+                   <div id="innerFilterDiv">
+                   <h3 id="priceHeading">Price</h3><br>
+            <button id="filterbtn0">All Products</button><br>
+            <button id="filterbtn1">$00 - $499.99</button><br>
+            <button id="filterbtn2">$500 - $999.99</button><br>
+            <button id="filterbtn3">$1000 - $1499.99</button><br>
+            <button id="filterbtn4">$1500 Above</button><br>
+        
+                <!-- filter -->
             </div>
-
-            <div  id="specialoffer">
-                <button>
-                    <div><h1>Special offers</h1></div>
-                    <span>We found offers available based on items in your cart!</span>
-                    <span><a href="">See all</a></span>
-                </button>
-            </div>
-
-            <!-- to add from the javascript  -->
-
-            <div id="cartitems">
-    
-            </div>
-            <!-- <div>
-                hello
-            </div> -->
-            
-            <!-- to add from the javascript  -->
         </div>
+        <div id="parent">
+            
+            <div id="sortDiv">
+                
+                    <p id="sortby">Sort By:</p>
 
-
-        <div class="ordersummary">
-            <h2>Order Summary</h2>
-            <hr>
-            <div id="itemprices">
-                <div>
-                    <span>Original Price</span>
-                    <!-- <span>$</span> -->
-                    <span id="ordereditemprice">0</span>
-                </div>
-                <div>
-                    <span>Savings</span>
-                    <!-- <span>$</span> -->
-                    <span id="oredereditemsavings">0</span>
-                </div>
-                <div>
-                    <span>Store Pickup</span>
-                    <!-- <span></span> -->
-                    <strong>Free</strong>
-                </div>
-                <div>
-                    <span>Estimated Sales Tax</span>
-                    <!-- <span>$</span> -->
-                    <span id="oredereditemsaletax">0</span>
-                </div>
-                <hr>
-                <div>
-                    <span id="Total">Total</strong></span>
-                    <!-- <span><strong>$</strong></span> -->
-                    <span id="ordereditemtotal">0</strong></span>
-                </div>
-            </div>
-            <div id="checkoutbuttoncontainer">
-                <div id="checkoutbutton"><button id="button1">Checkout</button></div>
-                <div id="paypalbutton"><button>Paypal checkout</button></div>
-                <a href="">Sign in or Createan account now</a><span> to get My Best Buy Points</span>
-            </div>
-
-            <div id="ordersummaryadditional">
-                <hr>
-                <h2>Apply today, shop today</h2>
-                <div id="cardsavings">
-                    <div>
-                        <div><img id="creditcard" src="https://www.bestbuy.com/~assets/bby/_com/MBBCC_MBBVC_2018_RGB-947585d1258e6806d8eeb072b8d2ad6a.png" alt="error"></div>
-                        <a href="">Show me how</a>
-                    </div>
-
-                    <div>
-                        <p>10% back in rewards on first day of purchases for new My Best Buy® Credit Card members</p>
-                        <p>$117.81/mo.* suggested monthly payments with 24 month financing on this purchase of $2,827.21</p>
-                    </div>
-                </div>
+                    <select id="sort" onchange="sortItems()">
+                    <option value="bm">Best Match</option>   
+                    <option value="h2l"> Price High to Low</option>
+                    <option value="l2h">Price Low to High</option>
+                    <option value="acending">Brand A-Z</option>
+                    <option value="decending">Brand Z-A</option>
+                        
+                    </select>
+                    
+               
             </div>
             <hr>
-            <h1>Looking for a lease to own option?</h1>
-            <p>Enjoy the tech you want today.
-                Learn more ></p>
-            <hr>
-            <h1>Buying a gift for someone special?</h1>
-            <p>Gift options can be added in checkout. Learn more ></p>
-
+            <div id="container"></div>
         </div>
     </div>
-
+    
+    
 
 
 
@@ -388,34 +319,9 @@
 
 
 
-    <button class="open-button" onclick="openForm()">Chat</button>
-    <!-- <button class="open-button2" onclick="continueForm()">Continue</button> -->
-    <div id="total"><p>Total</p></div>
- 
-    <div class="chat-popup" id="myForm">
-      <form action="/action_page.php" class="form-container">
-       
-        <h1>Chat</h1>
-        
-    
-        <label for="msg"><b>Message</b></label>
-        <textarea placeholder="Zara here, how can I help you...?" name="msg" required></textarea>
-    
-        <button type="submit" class="btn">Send</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-      </form>
-
-
-
-
-
-
-
-
-
 </body>
 
-<script src="./cart.js"></script>
 <script src="navbar.js"></script>
+<script src="tv.js"></script>
 
 </html>
