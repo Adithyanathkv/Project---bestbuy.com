@@ -433,7 +433,7 @@ data.map( function(element, index){
     extimates.setAttribute("id", ("extimates"))
 
 
-    div2.append(name,model,sku,miniDiv1,get,pickup,location,shipping,extimates)
+    div2.append(name,model,sku,miniDiv1,get,pickup,shipping,extimates)
 
     // 3rd column
     var div3 = document.createElement("div");
@@ -551,7 +551,7 @@ function addTocart(element){
 }
   // searchfilter
   function Search(){
-    var searchText=document.getElementById("search").value;
+    var searchText=document.getElementById("Search").value;
     console.log(searchText);
     var filterdata=phoneData.filter(function(el,index){
         return el.name.includes(searchText)

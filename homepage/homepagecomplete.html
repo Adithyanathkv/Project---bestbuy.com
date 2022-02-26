@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="navbar.css">
     <title>Cart - Best Buy</title>
     <style>
+        *{
+            box-sizing: border-box;
+        }
           #parent{
+              /* max-width: 1380px; */
            display: grid;
            grid-template-columns: repeat(2,700px);
-           grid-template-rows: repeat(1,600px);
+           grid-template-rows: repeat(1,auto);
             gap:20px;
            justify-content: center;
            font-family: Human BBY Digital,Human Fallback,Arial,Arial, Helvetica, sans-serif;
@@ -31,8 +35,8 @@
       /* 2ndbox main -15 smallbox */
       #box15{
             display:grid;
-            grid-template-columns: repeat(5,130px);
-            grid-template-rows: repeat(3,190px); 
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(3,auto); 
             justify-content: center;
             gap: 10px;  
             }
@@ -119,6 +123,7 @@
     }
     #parent6>div>h2{
         color: #0141bd;
+        
     }
     #parent6>div>h2:hover{
         color: #f30808;
@@ -185,7 +190,7 @@
 
 
                 <div id="searchbar">
-                    <input type="text" id="search" placeholder="Search Best Buy" onclick"goto()">
+                    <input type="text" id="search" placeholder="Search Best Buy" onclick="goto()">
                     <img id="searchlogo"
                         src="https://t3.ftcdn.net/jpg/03/25/73/68/240_F_325736897_lyouuiCkWI59SZAPGPLZ5OWQjw2Gw4qY.jpg"
                         alt="error">
@@ -202,7 +207,7 @@
 
                 <div id="cart">
                     <img id="cartlogo"
-                        src="https://cdn-icons.flaticon.com/png/512/2838/premium/2838895.png?token=exp=1645534023~hmac=eec01598345701d83ce219b3b08c603b"
+                        src="https://cdn-icons-png.flaticon.com/512/34/34627.png"
                         alt="error">
                         <a href="../cart/cart.html" id="carttext"> Cart</a>
                 </div>
@@ -214,7 +219,7 @@
 
         <div class="bottomnav">
             <div class="deals">
-                <a href="../topdeal.html">Top deals</a>
+                <a href="../Topdeals/topdeal.html">Top deals</a>
                 <a href="../deal of the day/style.html">Deals of the Day</a>
                 <a href="../total tech/totalTech.html">Best Buy Totaltech</a>
                 <a href="">Credit Cards</a>
@@ -255,6 +260,42 @@
 
     <!-- !enter your content here -->
 
+    <!-- slider -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+<style media="screen">
+.carousel-cell {
+width: 70%;
+margin: 5%;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+}
+</style>
+<body>
+<!-- <h1 class="w3-center">Simple Slider using Flickity Plugin By HACKERRAHUL</h1> -->
+<div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+  
+  <div class="carousel-cell">
+    <img class="w3-image" src="https://smash-images.photobox.com/original/5f04c1b41fd48d1b10ff27dfc90548bf13608845_Large-Print-lifestyle-3_1-2600.jpg">
+  </div>
+  <div class="carousel-cell">
+    <img class="w3-image" src="https://smash-images.photobox.com/original/bca8e5fa7862a2cfaefc300c5b572e7a6dc6f3f3_Standard-Prints-lifestyle-3_1-2600.jpg">
+  </div>
+  <div class="carousel-cell">
+    <img class="w3-image" src="https://smash-images.photobox.com/original/a422aed1a721e933961b19ea9e47e07fc71e0699_Acrylic-Prints-lifestyle-3_1-2600.jpg">
+  </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<!-- slider -->
+    
   <!-- 1st line parent div -->
   <div id="parent">
     <!-- 1st box -->
@@ -275,52 +316,52 @@
         <!-- box1 -->
         <div>
           <a href="../TV/tvcomplete.html"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/GL-product-nav-ht_der-78525.jpg;maxHeight=120;maxWidth=120"></a>
-        <a href="../TV/tvcomplete.html"><h2>Television</h2></a>
+        <a href="../TV/tvcomplete.html"><h5>Television</h5></a>
         </div>
         <!-- box2 -->
         <div>
            <a href="../Laptop/laptopcomplete.html"> <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/GL-product-nav-comp_der-78519.jpg;maxHeight=120;maxWidth=120"></a>
-        <a href="../Laptop/laptopcomplete.html"><h2>Laptops</h2></a>
+        <a href="../Laptop/laptopcomplete.html"><h5>Laptops</h5></a>
         </div>
         <!-- box3 -->
         <div>
             <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/gl-35599-ghp-pm-sale-test-tablets_der-89809.jpg;maxHeight=120;maxWidth=120">
-            <h2>Tablets</h2>
+            <h5>Tablets</h5>
         </div>
         <!-- box4 -->
         <div>
             <a href="../Phone/phonecomplete.html"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/GL-product-nav-cp_der-78520.jpg;maxHeight=120;maxWidth=120"></a>
-            <a href="../Phone/phonecomplete.html"> <h2>Cell Phones</h2></a>
+            <a href="../Phone/phonecomplete.html"> <h5>Cell Phones</h5></a>
         </div>
         <!-- box5 -->
         <div>
             <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/gl-35599-ghp-pm-sale-test-printers_der-89795.jpg;maxHeight=120;maxWidth=120">
-            <h2>Printers</h2>
+            <h5>Printers</h5>
         </div>
         <!-- box 6 -->
         <div>
             <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/GL-product-nav-app_der-78512.jpg;maxHeight=120;maxWidth=120">
-            <h2>Major Appliance</h2>
+            <h5>Major Appliance</h5>
         </div>
         <!-- box 7 -->
         <div>
             <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/gl-36983-ghp-pm-sale-test-small-appliances_der-93080.jpg;maxHeight=120;maxWidth=120">
-            <h2>Small Appliance</h2>
+            <h5>Small Appliance</h5>
         </div>
         <!-- box 8 -->
         <div>
             <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/GL-product-nav-vg_der-78530.jpg;maxHeight=120;maxWidth=120">
-            <h2>Video Games</h2>
+            <h5>Video Games</h5>
         </div>
         <!-- box 9 -->
         <div>
             <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/GL-product-nav-wearable_der-78529.jpg;maxHeight=120;maxWidth=120">
-            <h2>Smart Watches</h2>
+            <h5>Smart Watches</h5>
         </div>
         <!-- box 10 -->
         <div>
             <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/gl-36983-ghp-pm-sale-test-pc-gaming_der-93082.jpg;maxHeight=120;maxWidth=120">
-            <h2>Pc Gaming</h2>
+            <h5>Pc Gaming</h5>
         </div>
         
        </div>
@@ -328,6 +369,9 @@
     </div>
 </div>
 <br><br>
+</body>
+</html>
+
 
 
 <!-- 2nd line parent div -->
@@ -724,7 +768,7 @@ font-size: 50px;">10% back</h1>
         <div class="footernavicons">
             <ul id="footernavul">
                 <li>
-                    <img src="https://cdn-user-icons.flaticon.com/65075/65075732/1645526985909.svg?token=exp=1645527889~hmac=4b5883d495922b303e6259e91c489638"
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Icon-round-Question_mark.svg/1024px-Icon-round-Question_mark.svg.png"
                         alt="error">
 
                     <a href="">
@@ -733,7 +777,7 @@ font-size: 50px;">10% back</h1>
 
                 </li>
                 <li>
-                    <img src="https://cdn-user-icons.flaticon.com/65075/65075732/1645527180060.svg?token=exp=1645528778~hmac=933748b056f750fc1a902ba153444647"
+                    <img src="https://cdn-icons-png.flaticon.com/512/679/679720.png"
                         alt="error">
 
                     <a href="">
@@ -741,7 +785,7 @@ font-size: 50px;">10% back</h1>
                     </a>
                 </li>
                 <li>
-                    <img src="https://cdn-user-icons.flaticon.com/65075/65075732/1645527649579.svg?token=exp=1645528778~hmac=a9a03a4ee11b051434d0e824d7f46f9d"
+                    <img  src="https://toppng.com/uploads/preview/delivery-icon-transparent-background-shipping-cost-ico-11562852302e3mtlf1bfz.png"
                         alt="error">
 
                     <a href="">
@@ -749,7 +793,7 @@ font-size: 50px;">10% back</h1>
                     </a>
                 </li>
                 <li>
-                    <img src="https://cdn-user-icons.flaticon.com/65075/65075732/1645528031460.svg?token=exp=1645528954~hmac=c95ced26f2caaddf7c9539b6d5f66511"
+                    <img src="https://icon-library.com/images/return-icon-png/return-icon-png-14.jpg"
                         alt="error">
 
                     <a href="">
@@ -757,7 +801,7 @@ font-size: 50px;">10% back</h1>
                     </a>
                 </li>
                 <li>
-                    <img src="https://cdn-user-icons.flaticon.com/65075/65075732/1645528083561.svg?token=exp=1645528987~hmac=6c3ae95df58f7f3ffa52488017328bd5"
+                    <img src="https://icons.veryicon.com/png/o/miscellaneous/template-3/return-guarantee.png"
                         alt="error">
 
                     <a href="">
@@ -838,13 +882,13 @@ font-size: 50px;">10% back</h1>
                     <h3>Get the latest deals and more. </h3>
                     <div>
                         <input type="text" placeholder="Enter email address">
-                        <button> Sign Up</button>
+                        <button style="font-size: 12px"> Sign Up</button>
                     </div>
                 </form>
                 <hr>
                 <div id="footerappsection">
                     <img id="footermobileicon"
-                        src="https://cdn-user-icons.flaticon.com/65075/65075732/1645536202943.svg?token=exp=1645537106~hmac=18a0006fbc54a871fb2034fe0f781380"
+                        src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2Q5V3UOdaRRZPOATlCy_d1fivv8CfDUouTKauO4DCdU1Ap6_e"
                         alt="error">
                     <div>
                         <h3>Best Buy App</h3>
@@ -853,15 +897,15 @@ font-size: 50px;">10% back</h1>
                 </div>
                 <hr>
                 <div id="footerapplogo">
-                    <img src="https://cdn-user-icons.flaticon.com/65075/65075732/1645536980708.svg?token=exp=1645541446~hmac=31d2f353892b2e1364f6510a26994675"
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTG0TeHyYhw1JoG8X7dfV2yOQdtmlpMr05uZ3H9geLS7x0pm4bj"
                         alt="error">
-                    <img src="https://cdn-user-icons.flaticon.com/65075/65075732/1645540786075.svg?token=exp=1645541704~hmac=64a609bcdbfcb668a57dd23ad73def51"
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDThuN1-8NbyukTYLh-cWdV4q9IsOCUyrsRwXXN6X5drv4k708"
                         alt="">
-                    <img src="https://cdn-user-icons.flaticon.com/65075/65075732/1645540817678.svg?token=exp=1645541721~hmac=e3cb364d26800d5242e599ee03359dbf"
+                    <img src="https://www.pngitem.com/pimgs/m/82-821814_transparent-ig-png-blue-instagram-icon-png-png.png"
                         alt="">
-                    <img src="https://cdn-user-icons.flaticon.com/65075/65075732/1645543497123.svg?token=exp=1645544409~hmac=5c61cc480c2b628208d9685314d05b79"
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6oK-O516yEMZ1emKe_Oj8t4AYuxw5Rf9fpBAB1-wJV_3E_pP1"
                         alt="">
-                    <img src="https://cdn-user-icons.flaticon.com/65075/65075732/1645543543818.svg?token=exp=1645544447~hmac=e4adfbda21418d336b943c321f72c1dd"
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHcSNXNI-vj6m4IgqegB-bOt6tuQWNyU7hlA&usqp=CAU"
                         alt="">
                 </div>
                 <hr>
@@ -900,7 +944,5 @@ font-size: 50px;">10% back</h1>
 
 
 </body>
-
-<script src="navbar.js"></script>
-
+<script src="./navbar.js"></script>
 </html>

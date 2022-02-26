@@ -546,7 +546,7 @@ function addTocart(element){
 }
   // searchfilter
   function Search(){
-    var searchText=document.getElementById("search").value;
+    var searchText=document.getElementById("Search").value;
     console.log(searchText);
     var filterdata=tvData.filter(function(el,index){
         return el.name.includes(searchText)

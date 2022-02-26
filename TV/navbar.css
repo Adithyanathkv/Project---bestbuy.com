@@ -96,7 +96,9 @@ body{
 
 }
 #store{
-    padding-left: 340px;
+    padding-left: 265px;
+    display: flex;
+    align-items: center;
 }
 #storetext{
     margin-top: 5px;
@@ -136,7 +138,7 @@ body{
 }
 .deals{
     /* border: 1px solid white; */
-    flex-basis: 60%;
+    flex-basis: 70%;
 }
 .bottomnav a{
     color: #fff;
@@ -159,7 +161,7 @@ body{
 }
 .status{
     /* border: 1px solid white; */
-    flex-basis: 40%;
+    flex-basis: 30%;
     /* display: flex; */
 }
 .status>ul{
