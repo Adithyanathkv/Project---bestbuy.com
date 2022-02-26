@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        font-family: sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        /* display: flex; */
+        position: relative;
+    }
+
+    .container {
+        width: 100%;
+        height: 250px;
+        background-color: white;
+        /* opacity: 0; */
+        animation: outercontainer 2s linear forwards 2s;
+        /* z-index: -1; */
+    }
+
+    @keyframes outercontainer {
+        0% {
+            background-color: #0046be;
+            width: 40%;
+        }
+  
+        100% {
+            background-color: #0046be;
+        }
+    }
+
+    .container img {
+        background-color: #0046be;
+        animation: container 2s linear forwards;
+        position: absolute;
+    }
+
+    @keyframes container {
+        0% {
+            width: 10px;
+            height: 10px;
+            top: 50%;
+            left: 50%;
+            transform: scale(1.5);
+        }
+
+        20% {
+            width: 150px;
+            height: 150px;
+            top: 30%;
+            left: 30%;
+            /* transform: scale(1.05); */
+        }
+
+        50% {
+            width: 150px;
+            height: 150px;
+            top: 10%;
+            left: 10%;
+        }
+
+        70% {
+            width: 150px;
+            height: 150px;
+            top: 0%;
+            left: 0%;
+        }
+
+        100% {
+            width: 40%;
+            height: 250px;
+            top: 0%;
+            left: 0%;
+        }
+    }
+
+    span {
+        display: block;
+        font-size: 30px;
+    }
+
+    h1 {
+        left: 30%;
+        position: absolute;
+        top: 300px;
+        animation: h1 2s linear forwards 1.5s;
+        /* display: none; */
+        opacity: 0;
+    }
+
+    @keyframes h1 {
+        0% {
+            opacity: .5;
+            color: violet;
+        }
+        50%{
+            transform: scale(1.5);
+        }
+
+        100% {
+            opacity: 1;
+            color: red;
+            transform: translateX(50px);
+        }
+
+    }
+#letter1{
+position: absolute;
+    top: 350px;
+    left: 550px;
+}
+#letter2{
+position: absolute;
+    top: 400px;
+    left: 590px;
+}
+#letter3{
+position: absolute;
+    top: 450px;
+    left: 575px;
+}
+#letter4{
+position: absolute;
+    top: 500px;
+    left: 560px;
+}
+#letter5{
+position: absolute;
+    top: 550px;
+    left: 590px;
+}
+#letter6{
+position: absolute;
+    top: 600px;
+    left: 650px;
+}
+.letter{
+    animation: all 1s linear forwards 3.5s;
+    opacity: 0;
+}
+@keyframes all {
+    0%{
+        opacity: 1;
+        transform: scale(1.15);
+        color: red;
+       transform: translateY(2px);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1.1);
+        /* transform: translateY(4px); */
+        color: blue;
+    }
+    
+}
+
+</style>
+
+<body>
+    <div class="container">
+        <img id="image" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/BestBuy_Logo_2020-190616.png"
+            alt="ERROR">
+    </div>
+    <h1>Construct week project</h1>
+    <span id="letter1" class="letter">GOURAV GONDHIA</span>
+    <span id="letter2" class="letter">RAHUL SINGH</span>
+    <span id="letter3" class="letter">SWATI SHARMA</span>
+    <span id="letter4" class="letter">ADITHYANATH K V</span>
+    <span id="letter5" class="letter">DHIRAJ BHAI</span>
+    <span id="letter6" class="letter">ANKIT</span>
+    <!-- <span id="letter7">Y</span> -->
+
+
+
+</body>
+<script>
+    document.querySelector("#image").addEventListener("click",function(){
+        window.location.href="../homepage/homepagecomplete.html"
+    })
+</script>
+
+</html>
