@@ -182,12 +182,14 @@ body{
     list-style: none;
     padding: 0px;
     display: none;
+    
 }
 .sublink>ul{
     list-style: none;
     padding: 0px;
     width: max-content;
-    background-color: rgba(128, 128, 128, 0.842);
+    background-color: rgba(13, 84, 131, 0.418);
+    
 }
 .sublink>ul>li{
     border-bottom: 1px solid aqua;
@@ -204,9 +206,9 @@ body{
     display: block;
     margin: auto;
     margin-bottom: 10px;
-    background-color: white;
+    /* background-color: white; */
     font-size: 20px;
-    color:#0046BE ;
+    color:white ;
     text-align: center;
     text-decoration: none;
 }
@@ -244,6 +246,7 @@ body{
 
 .status>div>ul>li{
     margin:10px 0px;
+    
 }
 .status>div>ul:hover{
     display: block;
