@@ -65,7 +65,7 @@
 <p>This footer is coming in all pages makes it easy to check other pages in an easy fashion.</p>
 <img align="center" src="https://miro.medium.com/max/1400/0*bJYfTnIYGPxTLSo-.png"></img>
 
-<h2>Team members name:</h2>
+<h2>Contributors name:</h2>
  <ul>
  <ol>◉ Rahul Singh</ol>
  <ol>◉ Adithyanath KV</ol>
