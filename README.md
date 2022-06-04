@@ -1,11 +1,18 @@
 # Project---bestbuy.com
+<<<<<<< HEAD
 # Project---bestbuy.com
+=======
+>>>>>>> fc3655ce9f5731dd6090fc0b58830b47d045ffa0
 <div >
  <h1 align="center">BEST BUY (Clone)</h1>
  <br/>
  <p>“BEST BUY” website Clone. In this project, we are introducing some categories or pages with the login and signup pages.</P>
  <h2 align="left">Languages Used-</h2>
+<<<<<<< HEAD
  <p>The website looks very amazing and introduces amazing JavaScript, HTML, and CSS languages. We are sharing the details of the coding languages used in     this project given below:</p>
+=======
+ <p>The website looks very amazing and introduces amazing JavaScript, HTML, and CSS languages. We are sharing the details of the coding languages used in this project given below:</p>
+>>>>>>> fc3655ce9f5731dd6090fc0b58830b47d045ffa0
  <ul>
  <ol>◉ JavaScript : 32.8%</ol>
  <ol>◉ HTML : 47.7%</ol>
@@ -17,7 +24,11 @@
   <img align="center" src="https://miro.medium.com/max/1400/0*H_KSxOmxde1XCv8I.png"></img>
   <br/>
   <br/>
+<<<<<<< HEAD
   <p>First of all, you can see here, there is a navbar where you can see the best buy with electronics products, Search Bar, account, log in, Signup,          store, and Cart Pages that are shown in the image.</p>
+=======
+  <p>First of all, you can see here, there is a navbar where you can see the best buy with electronics products, Search Bar, account, log in, Signup, store, and Cart Pages that are shown in the image.</p>
+>>>>>>> fc3655ce9f5731dd6090fc0b58830b47d045ffa0
   <p>After that, you can see the total home page of this website that is made by using the HTML language.</p>
   <br/>
   <img align="center" align="center" src="https://miro.medium.com/max/1400/0*lbRmx3GMw4FmoL4K.png"></img>
@@ -26,7 +37,11 @@
   <img align="center" src="https://miro.medium.com/max/1400/0*PHg4-zkpfMoexZYS.png"></img>
   <br/>
   <br/>
+<<<<<<< HEAD
   <p>Now when you click on the television page then you are moving to the television page. And you can see here there are some filters and sorts like Price   to sort and select a brand like in this way.</p>
+=======
+  <p>Now when you click on the television page then you are moving to the television page. And you can see here there are some filters and sorts like Price to sort and select a brand like in this way.</p>
+>>>>>>> fc3655ce9f5731dd6090fc0b58830b47d045ffa0
   <p>Price to Short: This category helps you to get the product in ascending price and descending price.</p>
   <p>Select Brand: This function allows you to select your favorite brands to get the products of the selected brands.</p>
   <img align="center" src="https://miro.medium.com/max/1400/0*2Zwz_faZraBbYwxp.png"></img>
@@ -45,7 +60,11 @@
   <img align="center" src="https://miro.medium.com/max/1400/0*Wcw_eL609RCJa_Ki.png"></img>
   <br/>
   <br/>
+<<<<<<< HEAD
   <p>Now the cart Page is empty so the price will be zero, which you can see in the above image. But when you add some product in it then your cart is   being full and showing the total price</p>
+=======
+  <p>Now the cart Page is empty so the price will be zero, which you can see in the above image. But when you add some product in it then your cart is being full and showing the total price</p>
+>>>>>>> fc3655ce9f5731dd6090fc0b58830b47d045ffa0
   
 <h2>Checkout Page</h2>
 <p>When you click on the checkout option then you are moving to the payment option that you can see in the below image.</p>
@@ -58,7 +77,11 @@
   <br/>
   <p>Data you can enter from the signup page that you can see from the below image.</p>
 
+<<<<<<< HEAD
 <h2>Sign In Page</h2>
+=======
+<h3>Sign In Page</h3>
+>>>>>>> fc3655ce9f5731dd6090fc0b58830b47d045ffa0
 <p>When you are successfully signup then this page allows you to sign in to the website.</p>
 <img align="center" src="https://miro.medium.com/max/1400/0*0T_HAKEAmx1uPZqR.png"></img>
 
@@ -75,4 +98,8 @@
  <ol>◉ Swati Sharma</ol>
  <ol>◉ Ankit Kumar</ol>
   </ul>
+<<<<<<< HEAD
+=======
+
+>>>>>>> fc3655ce9f5731dd6090fc0b58830b47d045ffa0
 </div>
