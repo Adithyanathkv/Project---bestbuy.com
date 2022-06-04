@@ -61,7 +61,7 @@
 <p>When you are successfully signup then this page allows you to sign in to the website.</p>
 <img align="center" src="https://miro.medium.com/max/1400/0*0T_HAKEAmx1uPZqR.png"></img>
 
-<h3>Footer</h3>
+<h2>Footer</h2>
 <p>This footer is coming in all pages makes it easy to check other pages in an easy fashion.</p>
 <img align="center" src="https://miro.medium.com/max/1400/0*bJYfTnIYGPxTLSo-.png"></img>
 
