@@ -12,9 +12,9 @@
  <ol>◉ This report is given from the GitHub of total percentages of the coding languages. So, Now we explain our projects.</ol>
   </ul>
   -If you want to visit our project then just click on the link given below:
-[Project Netlify link](https://determined-dijkstra-376c37.netlify.app/)
+ [Project Netlify link](https://determined-dijkstra-376c37.netlify.app/)
 If you want to read our blog then visit the :
-[medium link](https://medium.com/@adithyanathmite/best-buy-website-clone-project-masai-school-c0b48e65dbd)
+ [medium link](https://medium.com/@adithyanathmite/best-buy-website-clone-project-masai-school-c0b48e65dbd)
   
   
   <h2>Navigation Bar.</h2>
