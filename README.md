@@ -1,6 +1,6 @@
 # Project---bestbuy.com
 <div >
- <h1 align="center">BEST BUY (Clone)</h1>Cancel changes
+ <h1 align="center">BEST BUY (Clone)</h1>
  <br/>
  <p>“BEST BUY” website Clone. In this project, we are introducing some categories or pages with the login and signup pages.</P>
  <h2 align="left">Languages Used-</h2>
@@ -11,6 +11,8 @@
  <ol>◉ CSS : 19.5%</ol>
  <ol>◉ This report is given from the GitHub of total percentages of the coding languages. So, Now we explain our projects.</ol>
   </ul>
+  
+  
   
   <h2>Navigation Bar.</h2>
   <img align="center" src="https://miro.medium.com/max/1400/0*H_KSxOmxde1XCv8I.png"></img>
